@@ -13,8 +13,8 @@ is different from:
   -- LOOKING only at items AT even-numbered indices.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Toluwa Nafiu.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -22,7 +22,7 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     # ------------------------------------------------------------------
-    # TODO: 2.  EXAMINE the  4  sequences immediately below
+    # DONE: 2.  EXAMINE the  4  sequences immediately below
     #   this comment, and READ the instructions that follows them.
     #
     # When you have examined the 4 sequences below and understand how
@@ -47,8 +47,8 @@ def main():
     #     4. When satisfied with your work, move onto the next test.
     # ------------------------------------------------------------------
 
-    run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
-#     run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
+#     run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
@@ -354,9 +354,11 @@ def print_all_items_forwards(sequence):
        Point at (90, 25)
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
+    for i in range(len(sequence)):
+        print(sequence[i])
 
 
 # ----------------------------------------------------------------------
@@ -376,9 +378,11 @@ def print_all_items_backwards(sequence):
        55
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
+    for i in range(len(sequence) - 1, -1, -1):
+        print(sequence[i])
 
 
 # ----------------------------------------------------------------------
